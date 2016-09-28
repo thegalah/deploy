@@ -1,7 +1,7 @@
 version: "2"
 services:
     service-a:
-        image: # TODO
+        image: localhost:5000/sample-app/service-a
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         ports:
@@ -10,7 +10,7 @@ services:
             - service-b
     
     service-b:
-        image: # TODO
+        image: localhost:5000/sample-app/service-a
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
