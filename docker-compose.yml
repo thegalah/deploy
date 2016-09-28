@@ -10,7 +10,7 @@ services:
             - service-b
     
     service-b:
-        image: localhost:5000/sample-app/service-a
+        image: localhost:5000/sample-app/service-b
         environment:
             - APPINSIGHTS_INSTRUMENTATIONKEY
         expose:
